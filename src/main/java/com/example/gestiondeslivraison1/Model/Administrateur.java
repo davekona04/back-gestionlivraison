@@ -1,7 +1,15 @@
 package com.example.gestiondeslivraison1.Model;
 
-public class Administrateur {
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
+@Entity
+
+public class Administrateur {
+@Id
+@GeneratedValue(strategy = GenerationType.IDENTITY)
     private long  id_Administrateur;
     private String nom_Administateur;
     private String  prenom_Adminstrateur;
